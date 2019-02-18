@@ -10,7 +10,7 @@
 
 ### To install
 ---
-Clone from the repo and install npm will install require dependecies.
+Clone from the repo and install npm will install require dependecies:
 ```npm install```
 
 ### To run tests 
@@ -26,9 +26,11 @@ From within the lib folder run the following terminal command:
 ``` node STL_Parser.js ```
 
 This will execute the sript and output the following: 
-```{ numberOfTriangles: 2,
+```
+  { numberOfTriangles: 2,
     surfaceArea: 1.4142135623730951,
-    boundingBox: { x: 1, y: 1, z: 1 } }
+    boundingBox: { x: 1, y: 1, z: 1 } 
+  }
   ```
 
 The default STL file that is parsed when the script is executed is the ```Moon.stl```
