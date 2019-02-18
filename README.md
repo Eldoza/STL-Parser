@@ -35,7 +35,7 @@ This will execute the sript and output the following:
 
 The default STL file that is parsed when the script is executed is the ```Moon.stl```
 
-To parse other STL files, from within the ```STL_Parser.js``` file change to following line to the correct file path that you wish to parse: ```const STLFileOutput = fs.readFileSync('../STLFiles/Moon.stl')````
+To parse other STL files, from within the ```STL_Parser.js``` file change to following line to the correct file path that you wish to parse: ```const STLFileOutput = fs.readFileSync('../STLFiles/Moon.stl')```
 
 
 ### Design
@@ -49,6 +49,6 @@ In designing this parser I did the following:
  3. Follow proper variable and function naming conventions.
 
 ### Enhancements
-While the largest STL file that I have tested with this parser has over 38k triangles (Liver.stl), I have identified some areas for improvement. The parser as it currently stands has a relatively fast runtime, however I do foresee an unacceptable runtime when parsing a model with millions of triangles. A possible improvement on the current algorithm implementation would be to use a hash table along with memoization while looping over the string representation of the STL file. 
+While the largest STL file that I have tested with this parser has over 38k triangles ```(Liver.stl)```, I have identified some areas for improvement. The parser as it currently stands has a relatively fast runtime, however I do foresee an unacceptable runtime when parsing a model with millions of triangles. A possible improvement on the current algorithm implementation would be to use a hash table along with memoization while looping over the string representation of the STL file. 
 
 A future enhancement I propose would be to create a GUI for a much cleaner user expierence. 
