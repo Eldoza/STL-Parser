@@ -22,8 +22,8 @@ To run the accompanying tests run to following:
 ---
 * Note Node.js must be installed for application to run [Node JS](https://nodejs.org/en/download/)
 
-From within the lib folder run the following terminal command:
-``` node STL_Parser.js ```
+From the root directory run:
+``` npm run start ```
 
 This will execute the sript and output the following: 
 ```
@@ -35,7 +35,7 @@ This will execute the sript and output the following:
 
 The default STL file that is parsed when the script is executed is the ```Moon.stl```
 
-To parse other STL files, from within the ```STL_Parser.js``` file change to following line to the correct file path that you wish to parse: ```const STLFileOutput = fs.readFileSync('../STLFiles/Moon.stl')```
+To parse other STL files, from within root directory ```./lib/index.js``` file change to following line to the correct file path that you wish to parse: ```const STLFileOutput = fs.readFileSync('../STLFiles/Moon.stl')```
 
 
 ### Design
